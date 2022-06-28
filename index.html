@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="section">
+      <div class="card">
+        <div class="card-img">
+          <img src="img/1.jpeg" alt="flat-flower">
+        </div>
+
+        <h1>Хлорофитум</h1>
+        <p class="price">$25.6</p>
+        <div class="card-text">
+          <p>Отличное растение, обогащает помещение кислородом</p>
+        </div>
+        <div class="card-btn">
+          <button id="callback-button" class="get-modal_1">Заказать</button>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="img/2.jpeg" alt="flat-flower">
+        </div>
+        <h1>Замиокулькас</h1>
+        <p class="price">$5.45</p>
+        <div class="card-text">
+          <p>Растение ядовито. Необходимо соблюдать осторожность при пересадке</p>
+        </div>
+        <div class="card-btn">
+          <button id="callback-button-2" class="get-modal_1">Заказать</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="img/3.jpeg" alt="flat-flower">
+        </div>
+        <h1>Монстера</h1>
+        <p class="price">$9.73</p>
+        <div class="card-text">
+          <p>Монстера питается негативными эмоциями. И если вы будете их ей
+            давать,
+            то она разрастется до неведомых величин</p>
+        </div>
+        <div class="card-btn">
+          <button id="callback-button-3" class="get-modal_1">Заказать</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="img/4.jpeg" alt="flat-flower">
+        </div>
+        <h1>Спатифиллум</h1>
+        <p class="price">$8.22</p>
+        <div class="card-text">
+          <p>Учеными доказано, что спатифиллум способен очищать воздух от
+            вредных
+            соединений</p>
+        </div>
+
+        <div class="card-btn">
+          <button id="callback-button-4" class="get-modal_1" type="submit">Заказать</button>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <!-- <button id="callback-button" class="callback-btn">Обратный звонок</button> -->
+    </div>
+
+
+    <div class="modal" id="modal-1">
+      <div class="modal__content">
+        <button class="modal__close-button">X</button>
+
+
+        <div class="form">
+          <form action="send.php" method="post" id="form" class="form__body">
+            <h2 class="form__title">Отправка данных на почту</h2>
+            <div class="form__item">
+              <label for="formName" class="form__label">Имя*:</label>
+              <input id="formName" type="text" name="name" class="form__input"
+                placeholder="Иван">
+            </div>
+            <div class="form__item">
+              <label for="formTel" class="form__label">Номер телефона*:</label>
+              <input id="formTel" type="text" name="phone" class="form__input
+                form__input-phone" placeholder="8 999 000 11 11">
+            </div>
+            <div class="form__item">
+              <label for="formEmail" class="form__label">E-mail*:</label>
+              <input id="formEmail" type="text" name="email" class="form__input
+                form__input-email" placeholder="ivan@mail.ru">
+            </div>
+            <div class="form__item">
+              <div class="form__label">Название товара:</div>
+
+              <div class="options__item">
+                <input id="chlorophytum" checked type="radio" name="plant"
+                  class="options__input">
+                <label for="chlorophytum" class="options__label">Хлорофитум</label>
+              </div>
+
+              <div class="options__item">
+                <input id="zamioculcas" type="radio" name="plant"
+                  class="options__input">
+                <label for="zamioculcas" class="options__label">Замиокулькас</label>
+              </div>
+
+              <div class="options__item">
+                <input id="monstera" type="radio" name="plant"
+                  class="options__input">
+                <label for="monstera" class="options__label">Монстера</label>
+              </div>
+
+              <div class="options__item">
+                <input id="spathiphyllum" type="radio" name="plant"
+                  class="options__input">
+                <label for="spathiphyllum" class="options__label">Спатифиллум</label>
+              </div>
+            </div>
+            <button type="submit" class="form__button">Заказать</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
